@@ -56,11 +56,11 @@ const Footer = () => {
             <a href="#" className="hover:text-gray-500 transition duration-200 w-[25px] h-[25px] bg-[#80808035] rounded-full flex items-center justify-center"><FaEnvelope /></a>
           </div>
           <h2 className="text-lg font-bold mt-4">Invite Friends</h2>
-          <div className="flex mt-2">
+          <div className="flex mt-2 w-full">
             <input
               type="email"
               placeholder="Email ID"
-              className="p-2 rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8064A2]"
+              className="p-2 w-full rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#8064A2]"
             />
             <button className="p-2 bg-[#8064A2] text-white rounded-r hover:bg-[#684f87] transition duration-300">
               Invite

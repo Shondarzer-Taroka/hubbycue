@@ -28,7 +28,7 @@ const Header = () => {
                     <div className="flex items-center justify-center w-10 h-10 border-2 border-purple-500 rounded">
                         <span className="text-cyan-500 font-bold text-xl">h</span>
                     </div>
-                    <div className="ml-2">
+                    <div className="ml-2 header-nav">
                         <h1 className="text-lg md:text-xl font-semibold text-purple-600 italic"> <span className='text-cyan-500'>hobby</span> cue</h1>
                         <p className="text-sm text-gray-500 hidden sm:block">Your Hobby, Your Community</p>
                     </div>
@@ -49,7 +49,7 @@ const Header = () => {
                 </div>
 
 
-                <div className="hidden md:flex items-center space-x-6">
+                <div className="hidden md:flex items-center  space-x-2 xl:space-x-6">
 
                     <div className="relative group">
                         <button className="py-5 font-medium flex items-center">
