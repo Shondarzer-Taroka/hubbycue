@@ -50,7 +50,7 @@ const Testimonial = () => {
 
                             </div>
                         </div>
-                        <span className='mr-2'>00</span>
+                        <span className='mr-2 opacity-60'>00</span>
                         <div className="flex items-center">
                             {/* <img src="path_to_image" alt="Shubha Nagarajan" className="w-12 h-12 rounded-full object-cover" /> */}
                             <Image src={photo} alt='photo' width={100} height={100} className="w-9 h-9 rounded-full object-cover" />

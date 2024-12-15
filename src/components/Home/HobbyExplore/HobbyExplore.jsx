@@ -1,6 +1,7 @@
 import Image from "next/image";
 import peopleImage from '../../../../public/assets/Group 27.png'
 import facebook from '../../../../public/assets/facebook-3-logo-svgrepo-com.svg'
+import { FaEyeSlash } from "react-icons/fa";
 
 export default function HobbyExplore() {
     return (
@@ -76,7 +77,7 @@ export default function HobbyExplore() {
                   className="w-full p-2 border rounded-md text-sm focus:ring-2 focus:ring-purple-500 focus:outline-none"
                 />
                 <span className="absolute inset-y-0 right-2 flex items-center text-gray-400">
-                  🔒
+                  <FaEyeSlash/>
                 </span>
               </div>
             </div>

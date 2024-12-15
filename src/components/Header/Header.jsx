@@ -1,8 +1,3 @@
-
-
-
-
-
 'use client';
 import React, { useState } from 'react';
 import {
@@ -34,7 +29,7 @@ const Header = () => {
                         <span className="text-cyan-500 font-bold text-xl">h</span>
                     </div>
                     <div className="ml-2">
-                        <h1 className="text-lg md:text-xl font-semibold text-purple-600">hobbycue</h1>
+                        <h1 className="text-lg md:text-xl font-semibold text-purple-600 italic"> <span className='text-cyan-500'>hobby</span> cue</h1>
                         <p className="text-sm text-gray-500 hidden sm:block">Your Hobby, Your Community</p>
                     </div>
                 </div>
