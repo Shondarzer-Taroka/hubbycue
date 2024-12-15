@@ -19,3 +19,17 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+@media (min-width:769px) and (max-width:1020px) {
+.testimonial-last-part-audio{
+  width: 60%;
+}
+.testimonial-last-part-image{
+  width: 40%;
+}
+}
+
+@media (min-width:0px) and (max-width:550px) {
+.footer-link{
+  color: #6D747A;
+}
+}

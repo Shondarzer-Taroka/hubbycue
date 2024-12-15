@@ -74,9 +74,9 @@ import photo from '../../../../public/assets/2bc87a41926b207ab3c50bc70b9bd0c4.pn
 import Image from 'next/image';
 const Testimonial = () => {
     return (
-        <section className='max-w-[1440px] mx-auto p-11'>
+        <section className='max-w-[1440px] mx-auto md:p-11'>
 
-            <div className="bg-purple-50 p-6 rounded-lg">
+            <div className="bg-purple-50 p-4 md:p-6 rounded-lg">
                 <h2 className="text-xl font-bold mb-4">Testimonials</h2>
                 <div className="py-4 rounded-lg">
                     <p className="text-gray-700">
@@ -87,8 +87,8 @@ const Testimonial = () => {
 
 
 
-                <div className='flex items-center gap-2 w-full'>
-                    <div className=" px-4 flex items-center bg-purple-100 rounded h-[80px] w-[80%]">
+                <div className='flex flex-col-reverse md:flex-row items-center gap-2 w-full'>
+                    <div className="testimonial-last-audio px-4 flex items-center bg-purple-100 rounded h-[80px] w-full md:w-[80%]">
 
                         <div className="bg-purple-400 p-2 rounded-full">
                             <button className="bg-white p-2 rounded-full">
@@ -111,11 +111,10 @@ const Testimonial = () => {
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-2 w-[20%]">
+                    <div className="flex items-center gap-2 w-full testimonial-last-image md:w-[20%]">
                         <Image src={photo} alt='photo' width={100} height={100} className="w-12 h-12 rounded-full object-cover" />
 
                         <div>
-
                             <p className="text-gray-900 font-semibold">Shubha Nagarajan</p>
                             <p className="text-purple-500">Classical Dancer</p>
                         </div>
