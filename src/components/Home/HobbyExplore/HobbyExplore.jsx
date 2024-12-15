@@ -5,7 +5,7 @@ import facebook from '../../../../public/assets/facebook-3-logo-svgrepo-com.svg'
 export default function HobbyExplore() {
     return (
       <div className="flex min-h-screen flex-col lg:flex-row bg-[#f7f5f9] max-w-[1440px] mx-auto">
-        {/* Left Section */}
+       
         <div className="lg:w-1/2 flex flex-col justify-center pt-3 lg:pt-0 px-3 md:px-20 lg:px-32">
           <h1 className="text-3xl font-bold mb-4 italic">
             Explore your <span className="text-blue-500">hobby</span> or{" "}
@@ -29,7 +29,6 @@ export default function HobbyExplore() {
           </div>
         </div>
   
-        {/* Right Section */}
         <div className="lg:w-1/2 flex items-center justify-center">
           <div className="w-full max-w-md p-6">
             <div className="flex items-center justify-between mb-4">
@@ -82,7 +81,7 @@ export default function HobbyExplore() {
               </div>
             </div>
   
-            {/* Remember Me and Forgot Password */}
+          
             <div className="flex items-center justify-between text-sm text-gray-600 mt-4">
               <label className="flex items-center">
                 <input type="checkbox" className="mr-2" />
@@ -93,7 +92,7 @@ export default function HobbyExplore() {
               </a>
             </div>
   
-            {/* Submit Button */}
+        
             <button className="w-full bg-purple-600 text-white py-2 rounded-md mt-6 hover:bg-purple-700">
               Continue
             </button>
