@@ -4,7 +4,7 @@ import facebook from '../../../../public/assets/facebook-3-logo-svgrepo-com.svg'
 
 export default function HobbyExplore() {
     return (
-      <div className="flex min-h-screen bg-[#f7f5f9]">
+      <div className="flex min-h-screen bg-[#f7f5f9] max-w-[1440px] mx-auto">
         {/* Left Section */}
         <div className="w-1/2 flex flex-col justify-center px-10 md:px-20 lg:px-32">
           <h1 className="text-3xl font-bold mb-4 italic">
