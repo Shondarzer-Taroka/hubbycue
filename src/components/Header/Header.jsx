@@ -1,6 +1,6 @@
 
 
-// // final code
+
 
 
 'use client';
@@ -11,7 +11,10 @@ import {
     FaBell,
     FaShoppingCart,
     FaBars,
+    FaChevronDown,
 } from 'react-icons/fa';
+import { MdExplore, MdStar, MdStars } from "react-icons/md";
+
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +28,7 @@ const Header = () => {
     return (
         <header className="bg-white shadow-sm">
             <div className="container mx-auto flex items-center justify-between h-[70px] px-4">
-                {/* Logo */}
+
                 <div className="flex items-center">
                     <div className="flex items-center justify-center w-10 h-10 border-2 border-purple-500 rounded">
                         <span className="text-cyan-500 font-bold text-xl">h</span>
@@ -36,27 +39,27 @@ const Header = () => {
                     </div>
                 </div>
 
-                {/* Search Bar for Larger Screens */}
+
                 <div className="hidden md:flex items-center space-x-6 w-1/3">
-                    <div className="relative w-full">
+                    <div className="flex w-full">
                         <input
                             type="text"
                             placeholder="Search here..."
-                            className="w-full py-2 pl-4 pr-10 border rounded-md focus:outline-none focus:ring focus:ring-purple-300"
+                            className="w-full py-2 pl-4 pr-10 border border-r-0 rounded-r-none rounded-md outline-none"
                         />
-                        <button className="absolute top-2 right-2 text-purple-600">
+                        <button className=" bg-[#8064A2] text-white px-4 py-2 rounded-r-[8px]">
                             <FaSearch />
                         </button>
                     </div>
                 </div>
 
-                {/* Navigation for Larger Screens */}
+
                 <div className="hidden md:flex items-center space-x-6">
-                    {/* Explore Dropdown */}
+
                     <div className="relative group">
-                        <button className="text-gray-600 py-5 hover:text-purple-600 font-medium flex items-center">
-                            <span className="mr-2">Explore</span>
-                            <span className="text-lg">&#9662;</span>
+                        <button className="py-5 font-medium flex items-center">
+                            <span className="mr-2 flex gap-2 items-center"> <span className='flex items-center gap-1'> <MdExplore className=' text-purple-600 ' /> Explore</span> <span><FaChevronDown /></span> </span>
+
                         </button>
                         <div className="absolute left-0 w-48 bg-white shadow-md rounded-md hidden group-hover:block">
                             <ul className="py-2">
@@ -69,11 +72,10 @@ const Header = () => {
                         </div>
                     </div>
 
-                    {/* Hobbies Dropdown */}
+
                     <div className="relative group">
-                        <button className="text-gray-600 py-5 hover:text-purple-600 font-medium flex items-center">
-                            <span className="mr-2">Hobbies</span>
-                            <span className="text-lg">&#9662;</span>
+                        <button className="text-gray-600 py-5  font-medium flex items-center">
+                            <span className="mr-2 flex gap-2 items-center"> <span className='flex items-center gap-1'> <MdStars className='text-purple-600' /> Hobbies</span> <span><FaChevronDown /></span> </span>
                         </button>
                         <div className="absolute left-0 w-48 bg-white shadow-md rounded-md hidden group-hover:block">
                             <ul className="py-2">
@@ -86,16 +88,16 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <FaBookmark className="text-gray-600 hover:text-purple-600 cursor-pointer" />
-                    <FaBell className="text-gray-600 hover:text-purple-600 cursor-pointer" />
-                    <FaShoppingCart className="text-gray-600 hover:text-purple-600 cursor-pointer" />
+                    <FaBookmark className="text-purple-600 cursor-pointer" />
+                    <FaBell className="text-purple-600 cursor-pointer" />
+                    <FaShoppingCart className="text-purple-600 cursor-pointer" />
 
                     <button className="px-4 py-2 text-purple-600 border border-purple-600 rounded-md hover:bg-purple-600 hover:text-white">
                         Sign In
                     </button>
                 </div>
 
-                {/* Icons for Mobile and Tablet */}
+
                 <div className="md:hidden flex items-center space-x-4">
                     <FaSearch className="text-purple-600 text-lg cursor-pointer" />
                     <FaBell className="text-purple-600 text-lg cursor-pointer" />

@@ -307,9 +307,9 @@ export default function HobbyCards() {
         {cards.map((card) => (
           <div
             key={card.id}
-            className={`group border rounded-lg p-6 shadow-sm bg-white transition-shadow duration-300 ${card.hoverBg} hover:shadow-md`}
+            className={` text-center md:text-left group border rounded-lg p-6 shadow-sm bg-white transition-shadow duration-300 ${card.hoverBg} hover:shadow-md`}
           >
-            <div className="flex items-center mb-4">
+            <div className="flex items-center md:text-left mb-4 justify-center md:justify-start">
               <div
                 className={`text-3xl ${card.color} mr-3 transition-colors group-hover:text-white`}
                 aria-hidden="true"
@@ -329,7 +329,7 @@ export default function HobbyCards() {
             </p>
             {/* Button becomes invisible when hovered */}
             <button
-              className={`text-sm font-semibold px-4 py-2 border rounded-lg text-purple-600 border-purple-600 transition-opacity duration-300 group-hover:opacity-0`}
+              className={` w-full md:max-w-fit text-sm font-semibold px-4 py-2 border rounded-lg text-purple-600 border-purple-600 transition-opacity duration-300 group-hover:opacity-0`}
             >
               {card.button}
             </button>

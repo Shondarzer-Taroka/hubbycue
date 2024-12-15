@@ -72,12 +72,25 @@
 import React from 'react';
 import photo from '../../../../public/assets/2bc87a41926b207ab3c50bc70b9bd0c4.png'
 import Image from 'next/image';
+import { FaQuoteLeft } from 'react-icons/fa';
 const Testimonial = () => {
     return (
         <section className='max-w-[1440px] mx-auto md:p-11'>
 
             <div className="bg-purple-50 p-4 md:p-6 rounded-lg">
-                <h2 className="text-xl font-bold mb-4">Testimonials</h2>
+                {/* <div>
+                    <span>
+
+                    </span>
+                    <h2 className="text-xl font-bold mb-4">Testimonials</h2>
+                </div> */}
+                <div className="flex  space-x-2">
+                    <span className="w-[29px] rounded-full flex items-center justify-center h-[29px] bg-[#8064A2] text-white">
+                        <FaQuoteLeft />
+                    </span>
+                    <h2 className="text-xl font-bold mb-4">Testimonials</h2>
+                </div>
+
                 <div className="py-4 rounded-lg">
                     <p className="text-gray-700">
                         In a fast growing and ever changing city like Bangalore, it sometimes becomes very difficult to find or connect with like-minded people. Websites like hobbycue.com is a great service which helps me get in touch with, communicate, connect, and exchange ideas with other dancers. It also provides the extra benefit of finding products and services that I can avail, which I can be assured is going to be of great quality as it comes recommended by people of the hobbycue community. To have discussions, to get visibility, and to be able to safely explore various hobbies and activities in my city, all under one roof, is an excellent idea and I highly recommend it.
@@ -100,7 +113,7 @@ const Testimonial = () => {
                         <div className="flex-grow mx-4">
                             <div className="bg-purple-300 h-2 rounded-full">
                                 <div className="bg-purple-500 h-2 rounded-full" style={{ width: '.7%' }}></div>
-                              
+
                             </div>
                         </div>
                         <span className='mr-2'>00</span>

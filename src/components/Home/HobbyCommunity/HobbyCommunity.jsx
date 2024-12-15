@@ -3,7 +3,7 @@ import community from '../../../..//public/assets/Group 99.png'
 import Image from 'next/image';
 const HobbyCommunity = () => {
     return (
-        <section className='max-w-[1440px] mx-auto bg-blue-50 min-h-screen p-4 md:p-11' >
+        <section className='max-w-[1440px] mx-auto bg-blue-50 p-4 md:p-11' >
             <div className=" flex flex-col">
                 <div className=" mt-10">
                     <h1 className="text-xl md:text-4xl font-bold italic">
