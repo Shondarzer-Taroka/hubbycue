@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="pt-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-8 px-6">
-        {/* Hobbycue Section */}
+ 
         <div>
           <h2 className="text-lg font-bold mb-4">Hobbycue</h2>
           <ul>
@@ -17,7 +17,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* How Do I Section */}
         <div>
           <h2 className="text-lg font-bold mb-4">How Do I</h2>
           <ul>
@@ -30,7 +29,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Quick Links Section */}
+    
         <div>
           <h2 className="text-lg font-bold mb-4">Quick Links</h2>
           <ul>
@@ -41,7 +40,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social Media Section */}
+     
         <div>
           <h2 className="text-lg font-bold mb-4">Social Media</h2>
           <div className="flex gap-2 text-gray-600">
@@ -70,7 +69,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Bottom */}
+     
       <div className="text-center mt-8 text-gray-500 bg-gray-100 p-3 md:p-4 rounded-lg">
         &copy; {new Date().getFullYear()} Purple Cues Private Limited
       </div>
